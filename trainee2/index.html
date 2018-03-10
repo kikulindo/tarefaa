@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>teste</title>
+  </head>
+  <body>
+    <script>
+      var name ='João Vitor Gregorio Kikuchi Ferreira'
+      var idade = 19;
+      var sexoMasculino = false;
+      var peso = 98.603;
+      alert ('Olá seu nome é ' + name + 'você tem ' + idade + ' anos');
+      if (idade <=18){
+      alert('Novinho');
+    } else if (idade >18 && idade <=30){
+      alert ('Tiozinho');
+    }else{
+      alert ('Tiozão');
+    }
+    var dia= new Date().getDay();
+    switch (dia) {
+      case 0:
+        console.log('domingo)');
+         break;
+      case 1:
+        console.log('segunda');
+         break;
+      case 2:
+        console.log('terça');
+         break;
+      case 3:
+        console.log('quarta');
+         break;
+      case 4:
+        console.log('quinta');
+         break;
+      case 5:
+        console.log('sexta');
+         break;
+      case 6:
+       console.log('sábado');
+         break;
+    }
+    function AlgarismoRomano(décimo){
+     switch (parseInt(décimo)) {
+       case 1:
+        return "I";
+       case 2:
+        return "II";
+       case 3:
+        return "III";
+       case 4:
+        return "IV";
+       case 5:
+        return "V";
+       case 6:
+        return "VI";
+       case 7:
+        return "VII";
+        case 8:
+         return "VIII"
+        case 9:
+         return "IX"
+        case 10:
+         return "X"
+     }
+   }
+       var lul= prompt("Digite um número de 1 a 10.")
+       if (lul >= 1 && lul <= 10) {
+         alert ("Número Válido");
+         var resultado= AlgarismoRomano(lul);
+         alert (resultado);
+       } else {
+         alert ("Número Inválido");
+       }
+       for (var i = 1; i <=10; i++){
+         var d = AlgarismoRomano(i);
+         alert (d);
+      }
+      for (var i = 10; i >=1; i--){
+      var a = AlgarismoRomano(i);
+      alert (a);
+      }
+      var pessoal = [];
+      var info = [];
+      pessoal.push('kikuchi');
+      pessoal.push('0000-0000');
+      info.push('rua das águas claras');
+      info.push('casa');
+      info.push('jardim bela vista');
+      info.push('Josvaldo');
+      info.push('Josefina');
+      pessoal.push('(77) 78945-98745');
+      pessoal.push[0] = 'João Vitor Gregorio Kikuchi Ferreira';
+      pessoal.splice(2,1);
+      console.log(info);
+      console.log(pessoal);
+      var dadosPessoais = {
+        nome:'João Vitor',
+        sobreNome:'Gregorio Kikuchi Ferreira',
+          endereco: {
+            cep:'000000',
+            rua:'Rua da rua',
+            numero:'5',
+            complemento:'casa',
+            bairro:'jardim bela vista',
+            cidade:'Maringá',
+            estado:'Paraná',
+          },
+          showInfo: function (){
+            return this.nome + " " + this.sobreNome + " " + this.endereco.bairro + " " + this.endereco.numero + " " + this.endereco.cidade
+            + " " + this.endereco.estado;
+          }
+        }
+        alert(dadosPessoais.showInfo());
+
+
+
+
+
+</script>
+  </body>
+</html>
